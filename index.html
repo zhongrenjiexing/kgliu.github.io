@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>个人介绍 | Your Name</title>
+  <style>
+    :root {
+      --bg: #f7f9fc;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --primary: #2563eb;
+      --border: #e5e7eb;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+      color: var(--text);
+      background: linear-gradient(180deg, #eef4ff 0%, var(--bg) 45%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 760px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 28px;
+      box-shadow: 0 10px 30px rgba(17, 24, 39, 0.08);
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    .avatar {
+      width: 88px;
+      height: 88px;
+      border-radius: 50%;
+      background: #dbeafe;
+      color: #1d4ed8;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 28px;
+    }
+
+    h1 {
+      margin: 0 0 6px;
+      font-size: 30px;
+    }
+
+    .subtitle {
+      margin: 0;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .section {
+      margin-top: 22px;
+    }
+
+    .section h2 {
+      margin: 0 0 10px;
+      font-size: 18px;
+      color: #111827;
+    }
+
+    .section p,
+    .section li {
+      line-height: 1.7;
+      color: #374151;
+      margin: 0;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 18px;
+      display: grid;
+      gap: 6px;
+    }
+
+    .contact {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .contact a {
+      text-decoration: none;
+      padding: 8px 12px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      color: var(--primary);
+      font-size: 14px;
+      transition: all 0.2s ease;
+    }
+
+    .contact a:hover {
+      background: #eff6ff;
+      border-color: #bfdbfe;
+    }
+
+    footer {
+      margin-top: 26px;
+      color: #9ca3af;
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <section class="header">
+      <div class="avatar">你</div>
+      <div>
+        <h1>你的名字</h1>
+        <p class="subtitle">职业 / 方向，例如：机器人算法工程师</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>关于我</h2>
+      <p>
+        你好，我是一个热爱技术与实践的人，关注于将想法快速落地。这里可以写 2-3 句话，
+        简要介绍你的背景、兴趣和你正在做的事情。
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>技能与方向</h2>
+      <ul>
+        <li>方向 1：例如 机器人控制 / 机器学习 / 全栈开发</li>
+        <li>方向 2：例如 Python、C++、ROS、Docker</li>
+        <li>方向 3：例如 项目落地、系统优化、团队协作</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>联系方式</h2>
+      <p>欢迎交流与合作：</p>
+      <div class="contact">
+        <a href="mailto:your_email@example.com">邮箱</a>
+        <a href="https://github.com/zhongrenjiexing" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="#" target="_blank" rel="noreferrer">个人博客</a>
+      </div>
+    </section>
+
+    <footer>Last updated: 2026-03-27</footer>
+  </main>
+</body>
+</html>
